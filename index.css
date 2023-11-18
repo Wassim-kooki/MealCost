@@ -1,0 +1,230 @@
+.backgroundView{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: gray;
+    background-image: url("any.png");
+    background-size: cover;
+    background-position: center center;
+    overflow: auto;
+    user-select: none;
+}
+.titleP{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+}
+.mainCont{
+    text-align: center;
+}
+.mainContAn{
+    animation: appear 0.5s;
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.address{
+    width: 80%;
+    height: 25px;
+    background-color: white;
+    border: 2px solid darkslateblue;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    padding: 3px 7px 0px 0px;
+    margin: 20px 0px;
+}
+.categoryAddress{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 3px 10px;
+    margin: 0px;
+    transition: background-color 0.3s;
+    border-right: 1px solid gray;
+}
+.categoryAddress:first-child{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.categoryAddress:last-child{
+    border-right: none;
+}
+.categoryAddress:hover{
+    background-color: #AAA;
+}
+.mButton{
+    border: 2px solid darkslateblue;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: serif;
+    margin: 10px 5px;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+.mButton:hover{
+    border-color: darkorange;
+}
+.mTable{
+    border-style: hidden;
+    border-radius: 20px;
+    border-collapse: collapse;
+    outline: 2px solid darkslateblue;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0px;
+    transition: margin 0.5s;
+}
+.mTable td{
+    border: 1px solid gray;
+}
+.mTable tr{
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.mTable tr:hover{
+    background-color: lightblue;
+}
+.mTable tr:active{
+    background-color: yellow;
+}
+.mTable tr:nth-of-type(1){
+    background-color: #AAA;
+    cursor: default;
+}
+.mTable tr:nth-of-type(1) td:first-child{
+    border-top-left-radius: 20px;
+}
+.mTable tr:nth-of-type(1) td:last-child{
+    border-top-right-radius: 20px;
+}
+.mTable tr:last-child td:first-child{
+    border-bottom-left-radius: 20px;
+}
+.mTable tr:last-child td:last-child{
+    border-bottom-right-radius: 20px;
+}
+.floatingWindowBack{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #00000088;
+    transition: opacity 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.floatingWindow{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    border-radius: 20px;
+    width: max-content;
+    max-height: 80%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+    overflow: auto;
+}
+.txtIn{
+    width: 90%;
+    border: 2px solid darkslateblue;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 20px;
+    font-family: serif;
+    padding: 5px 10px;
+    margin: 5px 0px;
+}
+.mPara{
+    text-align: left;
+    font-size: 20px;
+    margin: 5px 0px;
+}
+.printer{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+.printer:hover{
+    background-color: lightblue;
+}
+.categ{
+    position: relative;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: serif;
+    text-align: left;
+    margin: 0;
+    padding: 5px 0px 0px 15px;
+    cursor: pointer;
+    max-height: 25px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.categexpand{
+    background-color: #00003333;
+}
+.categ:hover{
+    background-color: #00003333 /*#00006633*/;
+}
+.arrow{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+}
+.arrowClicked{
+    transform: rotate(180deg);
+}
+.aButton{
+    width: 25px;
+    height: 25px;
+    color: black;
+    /* border: 1px solid darkslateblue; */
+    border-radius: 10px;
+    padding: 0px 5px;
+    transition: all 0.3s;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.aButton:hover{
+    background-color: #0000ff33;
+}
+.addItemIn{
+    background-color: #00000000;
+    border: none;
+    position: absolute;
+    left: 30%;
+    font-size: 18px;
+    width: 30%;
+}
+.addItemIn[type="text"][disabled]{
+    color: black;
+}
