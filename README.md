@@ -12,7 +12,7 @@ Here are the finished meals, which contain of raw materials and semi-finished ma
 The user can input the cost of materials for one Kg (Kilogram), g (Gram), L (Liter), mL (Milliliter), piece. When adding materials to semi-finished materials or finished meals, the units have to be specified for entered quantities, and except for finished meals, at the end, the quantity of the material after preparing have to be specified, so that the application will show its cost for one unit in main view.
 
 # Run & package
-this application is written in JavaScript using electron framework, and HTML and CSS are used also. At first make sure the NodeJS is installed
+this application is written in JavaScript using electron framework, and HTML and CSS are used also. At first, make sure the NodeJS is installed.
 ### 1. Install Dependencies
 First of all, install dependencies by running the following command in terminal of CMD at the project folder:
 ```
