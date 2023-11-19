@@ -42,6 +42,7 @@ change "`<platform>`" and "`<arch>`" according to the target as following:
 | macOS | darwin | x64, arm64 or universal |
 | Mac App Store | mas | x64, arm64 or universal |
 | Linux | linux | ia32, x64, armv7l, arm64 or mips64el |
+
 After editing the file, run the following:
 ```
 npm run package
