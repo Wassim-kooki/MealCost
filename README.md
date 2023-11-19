@@ -13,17 +13,17 @@ The user can input the cost of materials for one Kg (Kilogram), g (Gram), L (Lit
 
 # Run & package
 this application is written in JavaScript using electron framework, and HTML and CSS are used also. At first make sure the NodeJS is installed
-## Install Dependencies
+### 1. Install Dependencies
 First of all, install dependencies by running the following command in terminal of CMD at the project folder:
 ```
 npm install
 ```
-## Run
+### 2. Run
 to run the app:
 ```
 npm run start
 ```
-## Package
+### 3. Package
 It's possible to package the application by editing the "package.json":
 ```
 {
